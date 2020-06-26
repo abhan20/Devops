@@ -35,6 +35,11 @@ BACK:
 
 ==> local to workspace : git reset --mixed CId
 
+
+Delete:
+
+==> git reset --hard CId
+
 ******************************************************
 
 Modified:
