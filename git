@@ -1,0 +1,46 @@
+git init
+
+git config --global user.name "ABHAN"
+git config --global user.email "@gmail.com"
+
+*************************************************
+ADDING:
+
+==> touch file1
+
+git status
+
+==> git add file1
+
+(or)
+git add *
+
+(or)
+git add .
+
+git status
+
+==> git commit -m "label" file 1
+
+git log
+
+==> git push
+*******************************************************
+
+BACK:
+
+==> staging to Workspace: git reset HEAD file1
+
+==> local to staging : git reset --soft CId
+
+==> local to workspace : git reset --mixed CId
+
+******************************************************
+
+Modified:
+
+==> workspace to local: git commit -m "label" file1
+
+
+
+
