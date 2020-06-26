@@ -20,7 +20,7 @@ git add .
 
 git status
 
-==> git commit -m "label" file 1
+==> git commit -m "label" file1
 
 git log
 

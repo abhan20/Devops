@@ -40,6 +40,7 @@ git reset --hard cid (to delete commit info)
 ================================================
 git clone https://github.com/polarapu/batch-55.git
 ls
+ll
 cd batch-55
 touch file1
 git status
