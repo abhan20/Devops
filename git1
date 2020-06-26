@@ -48,3 +48,4 @@ git add file1
 git commit -m "test commit"
 git log
 git push
+git pull --rebasegit push
