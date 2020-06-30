@@ -31,12 +31,21 @@ sudo systemctl enable docker
 
 After Installation any issue with firewall:
 
+sudo systemctl enable firewalld
+sudo reboot
+(checking purpose: sudo firewall-cmd --state)
 firewall-cmd --zone=public --add-masquerade --permanent
-
 firewall-cmd --zone=public --add-port=80/tcp
-
 firewall-cmd --zone=public --add-port=443/tcp
-
 firewall-cmd --reload
 
 **********************************************************************************************
+
+
+Uninstall docker:
+
+sudo yum remove docker-ce docker-ce-cli containerd.io
+sudo rm -rf /var/lib/docker
+
+
+
