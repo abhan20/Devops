@@ -1,5 +1,42 @@
+***************************************************************************************
+For Centos 7:
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+
+
+*************************************************************************************
+
+For 8.1:
+
+dnf upgrade -y
+sudo dnf install https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
+sudo dnf install docker-ce -y
+service docker status
+service docker start
+systemctl enable docker
+
+****************************************************************************************************
+
+For Centos 8.2:
+
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf repolist 
 sudo dnf install docker-ce --nobest -y
 sudo systemctl restart docker
 sudo systemctl enable docker
+
+*********************************************************************************************
+
+
+After Installation any issue with firewall:
+
+firewall-cmd --zone=public --add-masquerade --permanent
+
+firewall-cmd --zone=public --add-port=80/tcp
+
+firewall-cmd --zone=public --add-port=443/tcp
+
+firewall-cmd --reload
+
+**********************************************************************************************
