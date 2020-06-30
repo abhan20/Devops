@@ -4,7 +4,6 @@ For Centos 7:
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 
-
 *************************************************************************************
 
 For 8.1:
