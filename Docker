@@ -26,6 +26,9 @@ sudo systemctl restart docker
 sudo systemctl enable docker
 
 *********************************************************************************************
+Reference:
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7
 
 
 After Installation any issue with firewall:
@@ -47,10 +50,11 @@ sudo yum remove docker-ce docker-ce-cli containerd.io
 sudo rm -rf /var/lib/docker
 
 *********************************************************************************************
-Reference:
 
-https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7
+Docker-Compose: 
 
-*********************************************************************************************
+site: https://docs.docker.com/compose/install/
 
-
+sudo curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose--version
